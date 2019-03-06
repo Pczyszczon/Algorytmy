@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// n porównań, 
+// n
 int maximum(int t[], int n){
     int x = t[--n];
     while (n--)
@@ -16,7 +16,7 @@ int maximum(int t[], int n){
 int maximum_recursive(int t[], int n){
     if (n == 1)
         return t[0];
-    int x = maks_r(t, n-1);
+    int x = maximum_recursive(t, n-1);
     if (t[n-1] > x)
         return t[n-1];
     return x;
@@ -24,11 +24,12 @@ int maximum_recursive(int t[], int n){
 
 // O(logn)
 int maximum_recursive_2(int t[], int l, int r){
-    if (r-l==1)  return t[l];
+    if (r-l==1)  
+        return t[l];
     int m=(l+r)/2;
-    int u = maks_r2(t,l,m);
-    int v = maks_r2(t,m,r);
-    return u>v?u:v;
+    int u = maximum_recursive_2(t,l,m);
+    int v = maximum_recursive_2(t,m,r);
+    return u>v ? u:v;
 }
 
 
