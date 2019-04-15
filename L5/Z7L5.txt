@@ -1,0 +1,2 @@
+Najgorszy czas, czyli O(n^2) jest w sytuacji, w której wszystkie elementy nieposortowanej tablicy lądują w tym samym "kubełku". Z racji tego, że sortowanie wewnątrzkubełkowe jest
+obsługiwane przez inny algorytm sortujący, najczęściej insertion sort, w naszym przypadku złożoność będzie równa złożoności tego algorytmu sortującego.

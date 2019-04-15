@@ -1,0 +1,8 @@
+(a) Insertion sort - TAK: Jeśli dwa kolejne elementy są sobie równe to przesuwamy jedynie wskaźnik w prawo.
+(b) Quick sort - NIE: Zamienia miejscami równe elementy.
+(c) Heapsort - NIE: już po pierwszym przesianiu kopca kolejność jest nie do odtworzenia.
+(d) Merge sort - TAK: przy łączeniu posortowanych list wystarczy najpierw wziąć element z pierwszej listy.
+(e) Counting sort - TAK: Ponieważ nie zmieniamy kolejności elementów przy ich zliczaniu.
+(f) Radix sort TAK/NIE. Jeżeli będziemy sortować od najmniej ważnych elementów (jedności) to ten algorytm będzie stabilny, 
+	natomiast jeżeli będziemy chcieli sortować po najbardziej ważnych (np double) to nie będzie stabilny.
+(g) Bucket sort - TAK/NIE: Zależy od algorytmu sortującego wewnątrz kubełków.
